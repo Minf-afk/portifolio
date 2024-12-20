@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #f4f4f9, #e0e0e0);
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  background-color: #000; 
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  margin: 10px; 
+  display: inline-block; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.links a:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.links a:active {
+  transform: translateY(2px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px; 
+}
+
+body.dark .header {
+  background-color: #444;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  border: 4px solid #000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+}
+
+.projects .project {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 100%;
+  max-width: 400px; 
+  margin-bottom: 20px; 
+}
+
+body.dark .projects .project {
+  background-color: #444;
+}
+
+.projects .project:hover {
+  transform: translateY(-5px);
+}
+
+.projects-section {
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 20px; 
+  margin: 20px 0; 
+  background-color: #f9f9f9; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.projects-section h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
